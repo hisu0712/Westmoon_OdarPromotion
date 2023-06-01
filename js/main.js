@@ -14,7 +14,7 @@
     {
       //0
       type: 'sticky',
-      heightNum: 5, ///브라우저 높이의 5배로 scrollHeight 세팅(반응형)
+      heightNum: 10, ///브라우저 높이의 5배로 scrollHeight 세팅(반응형)
       scrollHeight: 0, //각 구간의 스크롤 높이 정보
       objs: {
         container: document.querySelector('#scroll-section-0'), //html 각 세션
@@ -27,8 +27,8 @@
         videoImages: []
       }, //어느시점에 이 메시지들 등장시킬지
       values: {
-        videoImagesCount: 300,
-        imageSequence: [0, 299],
+        videoImagesCount: 860,
+        imageSequence: [0, 859],
         canvas_opacity: [1, 0, { start:0.9, end: 1 }],
 
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
@@ -140,7 +140,7 @@
     let imgElem;
     for (let i=0; i < sceneInfo[0].values.videoImagesCount; i++){
       imgElem = new Image();
-      imgElem.src = `./image/001/IMG_${6726 + i}.jpg`
+      imgElem.src = `./image/003/${1 + i}.jpg`
       sceneInfo[0].objs.videoImages.push(imgElem);  
     }
 

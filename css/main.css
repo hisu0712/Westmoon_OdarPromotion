@@ -2,13 +2,15 @@
 :root{
   --apple_black: rgb(29, 29, 31);
   --apple_grey: #888;
-  --yellow: #e9dd2b;
+  --apple_white: #ddd;
+  --yellow: #e6e651;
   --black: #000;
   --white: #fff;
 }
 html{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
+  background-color: var(--apple_black);
 }
 body{
   overflow-x: hidden;
@@ -19,7 +21,7 @@ p{
   line-height: 1.6;
 }
 a{
-  color: var(--apple_black);
+  color: var(--apple_white);
   text-decoration: none;
 }
 
@@ -111,6 +113,12 @@ body.before-load {
   margin-bottom: 0.5em;
   font-size: 1.2rem;
 }
+/*추가*/
+#scroll-section-0 .main-message{
+  color: var(--white);
+}
+
+/*추가*/
 #scroll-section-2 .main-message{
   font-size: 3.5rem;
 }
