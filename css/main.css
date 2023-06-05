@@ -72,7 +72,7 @@ body.before-load {
 .local-nav-links .product-name{
   margin-right: auto;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 .local-nav-links a{
   font-size: 0.8rem;
@@ -104,7 +104,7 @@ body.before-load {
   opacity: 0;
 }
 .main-message p{
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   line-height: 1.2;
 }
@@ -116,6 +116,70 @@ body.before-load {
 /*추가*/
 #scroll-section-0 .main-message{
   color: var(--white);
+}
+/*viewer*/
+#viewer{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*세로축 기준 정렬*/
+  width: 100%;
+  position: relative;
+  padding: 30px 100px 50px;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: var(--apple_white);
+}
+#viewer .big{
+  font-size: 3rem;
+  font-weight: 700;
+}
+#viewer p{
+  padding-top: 0.3rem;
+  font-size: 1.7rem;
+}
+.view{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*세로축 기준 정렬*/
+  width: 100%;
+  height: 500px;
+  /*background-image: linear-gradient(to top, var(--skyblue), var(--blueA));*/
+  background-color: var(--blue);
+  position: relative;
+  border-radius: 50px;
+}
+#viewer model-viewer{
+  width: 100%;
+  height: 100%;
+  padding: 10px 35px;
+  background: unset;
+}
+.slides{
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  /*top: 30px; ar촬영시*/
+}
+.slide{
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.074);
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+.slide:last-child{ /*자신의 마지막 요소 선택자*/
+  margin-right: 0;
+}
+.slide.selected {
+  border: 3px solid var(--black);
 }
 
 /*추가*/
@@ -133,11 +197,11 @@ body.before-load {
   float: left;
   margin-right: 0.2em; /*위와 마찬가지로 이 글자 크기의 0.2배 정도 여백을 하고 싶어서(계산 쉬움)*/
   font-size: 3rem;
-  color: var(--apple_black);
+  color: var(--apple_white);
 }
 .sticky-elem.desc-message {
 	width: 45%;
-	font-weight: bold;
+	font-weight: 900;
 	opacity: 0;
 }
 .pin{
@@ -161,7 +225,7 @@ body.before-load {
   color: var(--apple_grey);
 }
 .mid-message strong{
-  color: var(--apple_black);
+  color: var(--apple_white);
 }
 .canvas-caption{
   max-width: 1000px;

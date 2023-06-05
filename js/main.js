@@ -1,5 +1,5 @@
 (()=>{ //전역변수 사용 안하기 위해(자동 호출 함수)
-
+  
   let yOffset = 0; ///window.pageYOffset 대신 쓸 변수
   let prevScrollHeight = 0; ///현재 스크롤 위치(yOffset)보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
   let currentScene = 0; ///현재 활성화된(눈앞에 보고있는) 씬(scroll-section)
@@ -27,7 +27,7 @@
         videoImages: []
       }, //어느시점에 이 메시지들 등장시킬지
       values: {
-        videoImagesCount: 860,
+        videoImagesCount: 859,
         imageSequence: [0, 859],
         canvas_opacity: [1, 0, { start:0.9, end: 1 }],
 
@@ -65,7 +65,7 @@
     {
       //2
       type: 'sticky',
-      heightNum: 5,
+      heightNum: 8,
       scrollHeight: 0, 
       objs: {
         container: document.querySelector('#scroll-section-2'),
@@ -79,8 +79,8 @@
         videoImages: []
       },
       values: {
-        videoImagesCount: 960,
-        imageSequence: [0, 959],
+        videoImagesCount: 522,
+        imageSequence: [0, 521],
         canvas_opacity_in: [0, 1, { start:0, end: 0.1 }],
         canvas_opacity_out: [1, 0, { start:0.95, end: 1 }],
 
@@ -147,7 +147,7 @@
     let imgElem2;
     for (let i=0; i < sceneInfo[2].values.videoImagesCount; i++){
       imgElem = new Image();
-      imgElem.src = `./image/002/IMG_${7027 + i}.JPG`
+      imgElem.src = `./test/arrange/${1 + i}.JPG`
       sceneInfo[2].objs.videoImages.push(imgElem);
     }
 
@@ -340,7 +340,7 @@
           }
   
           objs.canvas.style.transform = `scale(${canvasScaleRatio})`;
-          objs.context.fillStyle = 'white';
+          objs.context.fillStyle = 'rgb(29, 29, 31)';
           objs.context.drawImage(objs.images[0], 0, 0);
   
           /// 캔버스 사이즈에 맞춰 가정한 innerWidth와 innerHeight
@@ -387,7 +387,7 @@
         }
 
         objs.canvas.style.transform = `scale(${canvasScaleRatio})`;
-        objs.context.fillStyle = 'white';
+        objs.context.fillStyle = 'rgb(29, 29, 31)';
         objs.context.drawImage(objs.images[0], 0, 0);
 
         /// 캔버스 사이즈에 맞춰 가정한 innerWidth와 innerHeight
