@@ -6,6 +6,7 @@
   --yellow: #e6e651;
   --black: #000;
   --white: #fff;
+  --none:#ffffff00;
 }
 html{
   font-family: 'Noto Sans KR', sans-serif;
@@ -209,7 +210,7 @@ body.before-load {
 .pin{
   width: 1px;
   height: 100px;
-  background-color: var(--apple_black);
+  background-color: var(--none);
 }
 #scroll-section-2 .b{
   top: 10%;
