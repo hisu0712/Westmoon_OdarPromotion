@@ -14,7 +14,7 @@
     {
       //0
       type: 'sticky',
-      heightNum: 10, ///브라우저 높이의 5배로 scrollHeight 세팅(반응형)
+      heightNum: 11, ///브라우저 높이의 5배로 scrollHeight 세팅(반응형)
       scrollHeight: 0, //각 구간의 스크롤 높이 정보
       objs: {
         container: document.querySelector('#scroll-section-0'), //html 각 세션
@@ -28,7 +28,7 @@
       }, //어느시점에 이 메시지들 등장시킬지
       values: {
         videoImagesCount: 859,
-        imageSequence: [0, 859],
+        imageSequence: [0, 858],
         canvas_opacity: [1, 0, { start:0.9, end: 1 }],
 
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
@@ -65,7 +65,7 @@
     {
       //2
       type: 'sticky',
-      heightNum: 8,
+      heightNum: 11,
       scrollHeight: 0, 
       objs: {
         container: document.querySelector('#scroll-section-2'),
@@ -79,8 +79,8 @@
         videoImages: []
       },
       values: {
-        videoImagesCount: 522,
-        imageSequence: [0, 521],
+        videoImagesCount: 878,
+        imageSequence: [0, 877],
         canvas_opacity_in: [0, 1, { start:0, end: 0.1 }],
         canvas_opacity_out: [1, 0, { start:0.95, end: 1 }],
 
@@ -119,8 +119,8 @@
         canvas: document.querySelector('.image-blend-canvas'),
         context: document.querySelector('.image-blend-canvas').getContext('2d'),
         ImagesPath: [
-          './image/blend-image-1.jpg',
-          './image/blend-image-2.jpg'
+          './image/43.jpg',
+          './image/56.png'
         ],
         images: []
       }, 
@@ -147,7 +147,7 @@
     let imgElem2;
     for (let i=0; i < sceneInfo[2].values.videoImagesCount; i++){
       imgElem = new Image();
-      imgElem.src = `./test/arrange/${1 + i}.JPG`
+      imgElem.src = `./test/vid4/vid4_${i}.JPG`
       sceneInfo[2].objs.videoImages.push(imgElem);
     }
 
