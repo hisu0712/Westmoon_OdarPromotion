@@ -241,9 +241,8 @@ body.before-load {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7rem;
+  height: 3rem;
   background-color: var(--yellow);
-  color: var(--white);
 }
 .sticky-elem{
   display: none;
