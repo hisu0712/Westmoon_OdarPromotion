@@ -76,11 +76,12 @@ body.before-load {
 }
 .local-nav-links .product-name{
   margin-right: auto;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--white);
 }
 .local-nav-links a{
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--apple_white);
   font-weight: 500;
 }
@@ -99,6 +100,7 @@ body.before-load {
   text-align: center;
   /*추가*/
   color: var(--yellow);
+  text-shadow: 1px 3px 3px rgba(45, 45, 45, 0.494);
 }
 .main-message{ /*줄수 상관없이 세로방향 중앙정렬*/
   display: flex;
@@ -113,7 +115,6 @@ body.before-load {
 .main-message p{
   font-weight: 900;
   text-align: center;
-  line-height: 1.2;
 }
 .main-message small{
   display: block; /*다음 글자가 다음단락으로 넘어감*/
@@ -236,6 +237,9 @@ body.before-load {
   font-size: 2rem;
   color: var(--apple_grey);
 }
+.mid-message.br{
+  padding-bottom: 1.5rem;
+}
 .mid-message strong{
   color: var(--apple_white);
 }
@@ -340,7 +344,12 @@ body.before-load {
     font-size: 9vw; /*윈도우 창의 9% 정도(창에 따라 달라짐), 굷직한 문구는 창에 따라 크기가 달라지도록*/
   }
   .main-message{
-    font-size: 4vw;
+    font-size: 5vw;
+    text-shadow: 1px 3px 3px rgba(45, 45, 45, 0.494);
+  }
+  .main-message .small{ /*session1*/
+    font-size: 2vw;
+    font-weight: 700;
   }
   .description{
     padding: 0; /*메뉴명은 패딩 없음 width 1000px*/
@@ -353,7 +362,7 @@ body.before-load {
     font-size: 6vw;
   }
   .main-message small{
-    font-size: 1.5vw;
+    font-size: 1.7vw;
   }
   .sticky-elem.desc-message {
 		width: 20%;
@@ -369,6 +378,10 @@ body.before-load {
     width: 1000px;
 		padding: 0;
     font-size: 4vw; /*가변값*/
+    line-height: 0.8;
+  }
+  .mid-message .new-mid{
+    font-size: 2vw;
   }
   .canvas-caption{
     margin-top: -8rem;

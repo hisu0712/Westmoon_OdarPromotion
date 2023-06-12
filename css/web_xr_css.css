@@ -58,7 +58,7 @@ a{
 	color: var(--apple_black);
 }
 .local-nav-links a{
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: var(--apple_black);
 }
 .local-nav-links a:not(.product-name){
