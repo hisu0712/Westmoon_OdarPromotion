@@ -40,10 +40,10 @@
 	<div class="container">
 		<nav class="global-nav">
 			<div class="global-nav-links">
-				<a href="#" class="global-nav-item">about</a>
-				<a href="#" class="global-nav-item">Viewer</a>
+				<a href="#" class="global-nav-item">About</a>
 				<a href="#" class="global-nav-item">Service</a>
-				<a href="#" class="global-nav-item">promotion</a>
+				<a href="#" class="global-nav-item">Volumetric</a>
+				<a href="#" class="global-nav-item">Viewer</a>
 			</div>
 		</nav>
 		<nav class="local-nav">
@@ -59,13 +59,13 @@
 				<canvas id="video-canvas-0" width="1920" height="1080"></canvas>
 			</div>
 			<div class="sticky-elem main-message a">
-				<p>온전히 빠져들게 하는<br>최고급 모델링</p>
+				<p>온전히 빠져들게 하는<br>섬세한 모델링</p>
 			</div>
 			<div class="sticky-elem main-message b">
 				<p>디테일을 느끼게 해주는<br>볼륨매트릭 3D</p>
 			</div>
 			<div class="sticky-elem main-message c">
-				<p>맞춤형<br>컨텐츠 디자인</p>
+				<p>고객 맞춤형<br>컨텐츠 디자인</p>
 			</div>
 			<div class="sticky-elem main-message d">
 				<p>새롭게 당신에게<br>찾아온 산업</p>
@@ -73,7 +73,7 @@
 		</section>
 		<section class="scroll-section" id="scroll-section-1">
 			<P class="description">
-				<strong>보통 글구성 영역</strong>
+				<strong>(주)웨스트문</strong>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio cum delectus nihil inventore officia voluptatum! Repudiandae fugiat in facere vel non quam assumenda amet minus impedit saepe. Consequuntur beatae cum incidunt? Sequi at reiciendis qui iure repellendus dicta sint eius enim dolorum maiores eos sed sunt nam dolor quae rerum cumque illum earum nisi, hic fuga voluptas aut maxime accusamus! Eos facere totam vel excepturi, voluptatem ratione magni neque expedita in, consectetur, nihil molestias alias reiciendis aspernatur aut dolorem. Nobis obcaecati sequi delectus, dolore esse, reiciendis aliquam libero excepturi blanditiis eaque nisi et beatae accusantium in optio dolores quasi exercitationem magni. Enim assumenda maxime sequi non corrupti quos ipsa illo eum eaque nam, repudiandae inventore id veniam totam expedita amet velit soluta excepturi porro? Unde iure natus autem facilis sint beatae officia a inventore incidunt libero, fugiat minus asperiores maiores ad molestias eius. Consequuntur, ut. Possimus eum dolor, atque ea est eveniet voluptates, corporis optio quibusdam quisquam omnis? Nihil exercitationem culpa earum minima fuga maxime ipsum est quasi! Illo necessitatibus at dicta velit iusto ratione asperiores, aliquam ipsa quidem maiores voluptatem accusantium, cumque neque cupiditate numquam iste facere tempora ut distinctio veritatis sint sequi laborum? Quis aliquid dolore corrupti.
 			</P>
 		</section>
@@ -114,9 +114,11 @@
 			<h3>3D/AR 뷰어</h3>
 			<p>볼륨매트릭으로 만든 3D 모델을 체험해보세요.</p> <!--p 통합했으니 나중에 나눌것-->
 			<div class="view">
-				<model-viewer class="product" src="glb/backpack.glb" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel"><!--poster가 로딩되기 전에 사진-->
+				<model-viewer class="product" src="glb/golf.glb" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel"><!--poster가 로딩되기 전에 사진-->
 					<div class="slides">
-						<button class="slide selected" onclick="switchSrc(this, 'backpack')" style="background-image: url('glb/backpack.png');">
+						<button class="slide selected" onclick="switchSrc(this, 'golf')" style="background-image: url('glb/golf.png');">
+						</button>
+						<button class="slide" onclick="switchSrc(this, 'backpack')" style="background-image: url('glb/backpack.png');">
 						</button>
 						<button class="slide" onclick="switchSrc(this, 'ballet')" style="background-image: url('glb/ballet.png');">
 						</button>
@@ -125,9 +127,7 @@
 						<button class="slide" onclick="switchSrc(this, 'neck')" style="background-image: url('glb/neck.png');">
 						</button> 
 						<button class="slide" onclick="switchSrc(this, 'bikini')" style="background-image: url('glb/bikini.png');">
-						</button>  
-						<button class="slide" onclick="switchSrc(this, 'golf')" style="background-image: url('glb/golf.png');">
-						</button>
+						</button> 
 						<button class="slide" onclick="switchSrc(this, 'nike')" style="background-image: url('glb/nike.png');">
 						</button>
 					</div>
