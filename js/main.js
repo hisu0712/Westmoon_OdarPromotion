@@ -147,7 +147,7 @@
     let imgElem2;
     for (let i=0; i < sceneInfo[2].values.videoImagesCount; i++){
       imgElem = new Image();
-      imgElem.src = `./test/vid4/vid4_${i}.JPG`
+      imgElem.src = `./image/004/vid4_${i}.jpg`
       sceneInfo[2].objs.videoImages.push(imgElem);
     }
 
